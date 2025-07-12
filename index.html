@@ -11,8 +11,8 @@
   <link rel="apple-touch-icon" href="icon.png" />
   <style>
     :root {
-      --popup-width: 90vw;
-      --popup-max-width: 400px;
+      popup-width: 90vw;
+   popup-max-width: 400px;
     }
    body {
       font-family: 'Arial', sans-serif;
@@ -110,7 +110,6 @@
  <button class="toggle-button" onclick="toggleFlashcardAnswers()">Show All Answers</button>
   <div class="card-container">
 
-<!-- Updated Self Introduction and Related Card with Full Answer -->
     <div class="card" onclick="showAnswer(1)"><strong>1. じこしょうかいを おねがいします。<br>(Jiko shoukai wo onegaishimasu)<br>Self Introduction, please.</strong></div>
     <div class="popup-answer" id="answer1">
       はじめまして。バンダリ・ディパク と もうします。ネパールの だん から まいりました。わたし は まじめで せきにんかん が つよく、ひと を しんじやすく、まわり の ひと を だいじ に する せいかく です。チームワーク を たいせつ に して、れいぎ ただしく、じかん を まもる よう に こころがけています。わたし の よわみ は、ひと の こと を かんがえすぎる ところ ですが、それ が わたし の つよみ に も なっている と おもいます。しゅみ は えいが を みること と りょこう です。どうぞ よろしく おねがいいたします。
@@ -154,14 +153,14 @@
       Japan is safe, has well-established rules, and offers many opportunities to learn. Also, I am interested in Japanese culture and work style, and I want to grow as a person.
     </div>
 
-    <!-- Card 7 -->
+   
     <div class="card" onclick="showAnswer(7)"><strong>7. なぜ この しごと を えらびましたか？<br>(Naze kono shigoto wo erabimashita ka?)<br>Why did you choose this work?</strong></div>
     <div class="popup-answer" id="answer7">
       わたし は うんてん が すき で、にんたいりょく や ちゅういりょく に じしん が あります。また、この しごと を つうじて、たくさん の けいけん を つみ、しょうらい の ゆめ に ちかづける と おもいました。<br><br>
       Watashi wa unten ga suki de, nintairyoku ya chūiryoku ni jishin ga arimasu. Mata, kono shigoto wo tsūjite, takusan no keiken wo tsumi, shōrai no yume ni chikazukeru to omoimashita.<br><br>
       I like driving and I am confident in my endurance and concentration. I also believe that through this job, I can gain a lot of experience and get closer to achieving my future dream.
     </div>
-<!-- Card 8 -->
+
     <div class="card" onclick="showAnswer(8)"><strong>8. おうぼ の りゆう は なんですか？<br>(Ōbo no riyū wa nandesu ka?)<br>What is your reason for application?</strong></div>
     <div class="popup-answer" id="answer8">
       にほん で はたらきながら、たくさん の けいけん を つみたい と おもいました。しごと を とおして、じぶん の スキル を たかめたい から です。<br><br>
@@ -169,7 +168,7 @@
       I want to gain a lot of experience while working in Japan. I want to improve my skills through this job.
     </div>
 
-    <!-- Card 9 -->
+
     <div class="card" onclick="showAnswer(9)"><strong>9. しょうらい の ビジョン は なんですか？<br>(Shōrai no bijon wa nandesu ka?)<br>What is your vision for the future?</strong></div>
     <div class="popup-answer" id="answer9">
       にほん で ながく はたらき、けいけん を ためて、しょうらい は じぶん の レンタカー かいしゃ を ネパール で つくりたい です。<br><br>
@@ -177,7 +176,7 @@
       I want to work long-term in Japan, gain experience, and eventually start my own rental car company in Nepal.
     </div>
 
-    <!-- Card 10 -->
+   
     <div class="card" onclick="showAnswer(10)"><strong>10. にほん で なに を まなびたい ですか？<br>(Nihon de nani wo manabitai desu ka?)<br>What do you want to learn in Japan?</strong></div>
     <div class="popup-answer" id="answer10">
       しごと の スキル や ルール、そして にほん の ぶんか と マナー を まなびたい です。<br><br>
@@ -358,7 +357,7 @@
     <div class="card" onclick="showAnswer(50)"><strong>50. しごとでたいせつだとおもうことは？<br>(Shigoto de taisetsu da to omou koto wa?)<br>What do you think is important in work?</strong></div>
     <div class="popup-answer" id="answer50">せきにんとちーむわーくです。<br>Sekinin to chiimu waaku desu.<br>Responsibility and teamwork.</div>
 
-<div class="card" onclick="showAnswer(51)"><strong>51. どのくらいのきかん、うんてんのけいけんがありますか？<br>(Dono kurai no kikan, unten no keiken ga arimasu ka?)<br>How many years of driving experience do you have?</strong></div>
+    <div class="card" onclick="showAnswer(51)"><strong>51. どのくらいのきかん、うんてんのけいけんがありますか？<br>(Dono kurai no kikan, unten no keiken ga arimasu ka?)<br>How many years of driving experience do you have?</strong></div>
     <div class="popup-answer" id="answer51">１０ねんのけいけんがあります。<br>Juu-nen no keiken ga arimasu.<br>I have 10 years of experience.</div>
 
     <div class="card" onclick="showAnswer(52)"><strong>52. いちにちになんじかんうんてんしますか？<br>(Ichinichi ni nanjikan unten shimasu ka?)<br>How many hours do you drive per day?</strong></div>
@@ -387,7 +386,7 @@
 
     <div class="card" onclick="showAnswer(60)"><strong>60. うんてんしながらスマホをつかいますか？<br>(Unten shinagara sumaho o tsukaimasu ka?)<br>Do you use your phone while driving?</strong></div>
     <div class="popup-answer" id="answer60">いいえ、つかいません。<br>Iie, tsukaimasen.<br>No, I don’t.</div>
-<div class="card" onclick="showAnswer(61)"><strong>61. ひるやすみはどのようにすごしますか？<br>(Hiruyasumi wa dono you ni sugoshimasu ka?)<br>How do you spend your lunch break?</strong></div>
+    <div class="card" onclick="showAnswer(61)"><strong>61. ひるやすみはどのようにすごしますか？<br>(Hiruyasumi wa dono you ni sugoshimasu ka?)<br>How do you spend your lunch break?</strong></div>
     <div class="popup-answer" id="answer61">しょくじをしてすこしやすみます。<br>Shokuji o shite sukoshi yasumimasu.<br>I eat and rest a little.</div>
 
     <div class="card" onclick="showAnswer(62)"><strong>62. びょうきのときどうしますか？<br>(Byouki no toki dou shimasu ka?)<br>What do you do when you are sick?</strong></div>
@@ -417,7 +416,7 @@
     <div class="card" onclick="showAnswer(70)"><strong>70. けんこうをたもつためになにをしていますか？<br>(Kenkou o tamotsu tame ni nani o shiteimasu ka?)<br>What do you do to stay healthy?</strong></div>
     <div class="popup-answer" id="answer70">まいにちうんどうとバランスのよいしょくじをしています。<br>Mainichi undou to baransu no yoi shokuji o shiteimasu.<br>I exercise and eat a balanced diet daily.</div>
 
-<div class="card" onclick="showAnswer(71)"><strong>71. にほんごのがくしゅうはどのようにしていますか？<br>(Nihongo no gakushuu wa dono you ni shiteimasu ka?)<br>How are you studying Japanese?</strong></div>
+    <div class="card" onclick="showAnswer(71)"><strong>71. にほんごのがくしゅうはどのようにしていますか？<br>(Nihongo no gakushuu wa dono you ni shiteimasu ka?)<br>How are you studying Japanese?</strong></div>
     <div class="popup-answer" id="answer71">まいにちべんきょうしています。<br>Mainichi benkyou shiteimasu.<br>I study every day.</div>
 
     <div class="card" onclick="showAnswer(72)"><strong>72. にほんごのレベルはどれくらいですか？<br>(Nihongo no reberu wa dorekurai desu ka?)<br>What is your Japanese level?</strong></div>
@@ -447,7 +446,6 @@
     <div class="card" onclick="showAnswer(80)"><strong>80. にほんごでかいわができますか？<br>(Nihongo de kaiwa ga dekimasu ka?)<br>Can you have a conversation in Japanese?</strong></div>
     <div class="popup-answer" id="answer80">すこしできます。<br>Sukoshi dekimasu.<br>I can do it a little.</div>
 
-<!-- Cards 80 to 90 Previous Experience Related -->
     <div class="card" onclick="showAnswer(81)"><strong>81. まえのしょくばはどこですか？<br>(Mae no shokuba wa doko desu ka?)<br>Where was your previous workplace?</strong></div>
     <div class="popup-answer" id="answer81">Doko Moko Tech LLC (ネパール) で はたらいていました。<br>Doko Moko Tech LLC (Nepāru) de hataraiteimashita.<br>I worked at Doko Moko Tech LLC in Nepal.</div>
 
@@ -478,7 +476,6 @@
     <div class="card" onclick="showAnswer(90)"><strong>90. まえのしょくばでのせいかはなんですか？<br>(Mae no shokuba de no seika wa nan desu ka?)<br>What was your achievement at your previous job?</strong></div>
     <div class="popup-answer" id="answer90">おきゃくさままんぞくどをこうじょうさせました。<br>Okyakusama manzoku-do o koujou sasemashita.<br>I improved customer satisfaction.</div>
 
-<!-- Cards 90 to 100: Why Japan, Driving Work Related -->
     <div class="card" onclick="showAnswer(91)"><strong>91. なぜにほんをえらびましたか？<br>(Naze Nihon o erabimashita ka?)<br>Why did you choose Japan?</strong></div>
     <div class="popup-answer" id="answer91">にほんのぶんかときちんとしたせいかつがすきです。<br>Nihon no bunka to kichinto shita seikatsu ga suki desu.<br>I like Japanese culture and organized lifestyle.</div>
 
@@ -509,7 +506,6 @@
     <div class="card" onclick="showAnswer(100)"><strong>100. にほんのなにがすきですか？<br>(Nihon no nani ga suki desu ka?)<br>What do you like about Japan?</strong></div>
     <div class="popup-answer" id="answer100">ぶんか、まじめさ、きれいなかんきょうがすきです。<br>Bunka, majime-sa, kirei na kankyō ga suki desu.<br>I like the culture, discipline, and clean environment.</div>
 
-<!-- Cards 101 to 110: Kathmandu, Nepal, Japan Work Comparison -->
     <div class="card" onclick="showAnswer(101)"><strong>101. あなたのしゅっしんちはどこですか？<br>(Anata no shusshin-chi wa doko desu ka?)<br>Where is your hometown?</strong></div>
     <div class="popup-answer" id="answer101">わたしのしゅっしんちはネパールのカトマンズです。<br>Watashi no shusshin-chi wa Nepāru no Katomanzu desu.<br>My hometown is Kathmandu, Nepal.</div>
 
@@ -540,7 +536,6 @@
     <div class="card" onclick="showAnswer(110)"><strong>110. にほんでどんなせいかつをしたいですか？<br>(Nihon de donna seikatsu o shitai desu ka?)<br>What kind of life do you want to live in Japan?</strong></div>
     <div class="popup-answer" id="answer110">あんぜんでまじめにいきるせいかつをしたいです。<br>Anzen de majime ni ikiru seikatsu o shitai desu.<br>A safe and serious life with discipline.</div>
 
- <!-- Cards 111 to 120: Family and Consent -->
     <div class="card" onclick="showAnswer(111)"><strong>111. あなたのかぞくはなんにんですか？<br>(Anata no kazoku wa nan-nin desu ka?)<br>How many members are in your family?</strong></div>
     <div class="popup-answer" id="answer111">よにんです。ちち、はは、つまとわたしです。<br>Yonin desu. Chichi, haha, tsuma to watashi desu.<br>There are four people: father, mother, wife and me.</div>
 
@@ -572,7 +567,6 @@
     <div class="popup-answer" id="answer120">はい、かぞくのためにはたらきたいです。<br>Hai, kazoku no tame ni hatarakitai desu.<br>Yes, I want to work for my family.</div>
 
 
-<!-- Cards 121 to 130: Common Interview Questions -->
     <div class="card" onclick="showAnswer(121)"><strong>121. にほんにきたことがありますか？<br>(Nihon ni kita koto ga arimasu ka?)<br>Have you ever been to Japan?</strong></div>
     <div class="popup-answer" id="answer121">いいえ、はじめてです。<br>Iie, hajimete desu.<br>No, this will be my first time.</div>
 
@@ -710,7 +704,7 @@
       { keywords: ["もくひょう", "mokuhyou", "goal"], id: 68 },
       { keywords: ["れんしゅう", "renshuu", "practice"], id: 69 },
       { keywords: ["がくしゅう", "gakushuu", "learning"], id: 70 },
-{ keywords: ["にほんご", "nihongo", "japanese"], id: 71 },
+      { keywords: ["にほんご", "nihongo", "japanese"], id: 71 },
       { keywords: ["にほんごのべんきょう", "nihongo no benkyou", "japanese study"], id: 72 },
       { keywords: ["かいわれんしゅう", "kaiwa renshuu", "conversation practice"], id: 73 },
       { keywords: ["リスニング", "risuningu", "listening"], id: 74 },
@@ -720,7 +714,7 @@
       { keywords: ["がくしゅうじかん", "gakushuu jikan", "study time"], id: 78 },
       { keywords: ["がくしゅうきろく", "gakushuu kiroku", "study log"], id: 79 },
       { keywords: ["どりょく", "doryoku", "effort"], id: 80 },
-{ keywords: ["しごと", "shigoto", "work"], id: 81 },
+      { keywords: ["しごと", "shigoto", "work"], id: 81 },
       { keywords: ["しょうらい", "shourai", "future"], id: 82 },
       { keywords: ["きぼう", "kibou", "hope"], id: 83 },
       { keywords: ["キャリア", "kyaria", "career"], id: 84 },
@@ -731,7 +725,7 @@
       { keywords: ["つとめた", "tsutometa", "employed at"], id: 89 },
       { keywords: ["はたらいた", "hataraita", "worked at"], id: 90 },
 
-{ keywords: ["にほん を えらんだ", "nihon o eranda", "chose japan"], id: 92 },
+      { keywords: ["にほん を えらんだ", "nihon o eranda", "chose japan"], id: 92 },
       { keywords: ["なぜ ドライバー", "naze doraibaa", "why driver"], id: 93 },
       { keywords: ["ドライバーのしごと", "doraibaa no shigoto", "driver job"], id: 94 },
       { keywords: ["このしごと", "kono shigoto", "this job"], id: 95 },
@@ -741,7 +735,7 @@
       { keywords: ["ドライバーになりたい", "doraibaa ni naritai", "want to become driver"], id: 99 },
       { keywords: ["このしごとを えらんだ", "kono shigoto o eranda", "chose this work"], id: 100 },
 
-{ keywords: ["わたしのくに", "watashi no kuni", "my country"], id: 102 },
+      { keywords: ["わたしのくに", "watashi no kuni", "my country"], id: 102 },
       { keywords: ["にほんをえらんだ", "nihon o eranda", "chose japan"], id: 103 },
       { keywords: ["なぜにほん", "naze nihon", "why japan"], id: 104 },
       { keywords: ["にほんではたらきたい", "nihon de hatarakitai", "want to work in japan"], id: 105 },
@@ -750,7 +744,7 @@
       { keywords: ["けいざいてき", "keizaiteki", "economic"], id: 108 },
       { keywords: ["きかい", "kikai", "opportunity"], id: 109 },
       { keywords: ["にほんのほうがいい", "nihon no hou ga ii", "japan is better"], id: 110 },
-{ keywords: ["ちち", "chichi", "father"], id: 111 },
+      { keywords: ["ちち", "chichi", "father"], id: 111 },
       { keywords: ["はは", "haha", "mother"], id: 112 },
       { keywords: ["つま", "tsuma", "wife"], id: 113 },
       { keywords: ["のうぎょう", "nougyou", "farming"], id: 114 },
@@ -760,7 +754,7 @@
       { keywords: ["さんせい", "sansei", "agreement"], id: 118 },
       { keywords: ["かぞくのいけん", "kazoku no iken", "family opinion"], id: 119 },
       { keywords: ["しんせつ", "shinsetsu", "supportive"], id: 120 },
-{ keywords: ["べんきょう", "benkyou", "study"], id: 122 },
+      { keywords: ["べんきょう", "benkyou", "study"], id: 122 },
       { keywords: ["がくしゅう", "gakushuu", "learning"], id: 123 },
       { keywords: ["にほんごがくしゅう", "nihongo gakushuu", "japanese study"], id: 124 },
       { keywords: ["もくひょう", "mokuhyou", "goal"], id: 125 },
